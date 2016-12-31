@@ -84,37 +84,19 @@
 
 
 
-<meta name="description" content="前言这个项目在慕课网上是有教程的。关于React与Webpack的使用方法这里不阐述，建议大家都看官网学习，如果英文看的吃力的话再查中文资料。
-以下是我学习React之前收藏的链接：
-
-React-howto
-Top 5 Tutorials for Getting Started with React
-
-项目启动12345git clone https://github.com/Mxxim/gal">
+<meta name="description" content="前言&amp;emsp;好久没碰过这个博客了，在2016年的最后一天留个足迹吧！自从到了浙大读研，就意一直跟着导师做区块链研究，不怎么做前端项目了，囧～～但是，我对前端领域的技术更新会一直关注！刚好最近要做一个项目的宣传页，第一版UI的实现基本全部动画都是CSS3实现，没什么JS代码，后来UI改版，苦逼的我又得推倒重来。从2015年RN开源以来，我就一直想找个时间学习一下React，但却一直拖着。。。刚好">
 <meta property="og:type" content="article">
 <meta property="og:title" content="我的第一个React练手项目——画廊应用">
 <meta property="og:url" content="https://mxxim.com/2016/12/31/the-first-project-by-react/index.html">
 <meta property="og:site_name" content="Sammy的博客">
-<meta property="og:description" content="前言这个项目在慕课网上是有教程的。关于React与Webpack的使用方法这里不阐述，建议大家都看官网学习，如果英文看的吃力的话再查中文资料。
-以下是我学习React之前收藏的链接：
-
-React-howto
-Top 5 Tutorials for Getting Started with React
-
-项目启动12345git clone https://github.com/Mxxim/gal">
+<meta property="og:description" content="前言&amp;emsp;好久没碰过这个博客了，在2016年的最后一天留个足迹吧！自从到了浙大读研，就意一直跟着导师做区块链研究，不怎么做前端项目了，囧～～但是，我对前端领域的技术更新会一直关注！刚好最近要做一个项目的宣传页，第一版UI的实现基本全部动画都是CSS3实现，没什么JS代码，后来UI改版，苦逼的我又得推倒重来。从2015年RN开源以来，我就一直想找个时间学习一下React，但却一直拖着。。。刚好">
 <meta property="og:image" content="https://mxxim.com/images/react/1482665525613.png">
 <meta property="og:image" content="https://mxxim.com/images/react/1482732491459.png">
 <meta property="og:image" content="https://mxxim.com/images/react/1482732520228.png">
-<meta property="og:updated_time" content="2016-12-31T12:34:43.000Z">
+<meta property="og:updated_time" content="2016-12-31T13:48:36.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="我的第一个React练手项目——画廊应用">
-<meta name="twitter:description" content="前言这个项目在慕课网上是有教程的。关于React与Webpack的使用方法这里不阐述，建议大家都看官网学习，如果英文看的吃力的话再查中文资料。
-以下是我学习React之前收藏的链接：
-
-React-howto
-Top 5 Tutorials for Getting Started with React
-
-项目启动12345git clone https://github.com/Mxxim/gal">
+<meta name="twitter:description" content="前言&amp;emsp;好久没碰过这个博客了，在2016年的最后一天留个足迹吧！自从到了浙大读研，就意一直跟着导师做区块链研究，不怎么做前端项目了，囧～～但是，我对前端领域的技术更新会一直关注！刚好最近要做一个项目的宣传页，第一版UI的实现基本全部动画都是CSS3实现，没什么JS代码，后来UI改版，苦逼的我又得推倒重来。从2015年RN开源以来，我就一直想找个时间学习一下React，但却一直拖着。。。刚好">
 <meta name="twitter:image" content="https://mxxim.com/images/react/1482665525613.png">
 
 
@@ -343,13 +325,14 @@ Top 5 Tutorials for Getting Started with React
       
 
       
-        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>这个项目在慕课网上是有教程的。<br>关于<a href="https://facebook.github.io/react/docs/hello-world.html" target="_blank" rel="external">React</a>与<a href="http://webpack.github.io/docs/" target="_blank" rel="external">Webpack</a>的使用方法这里不阐述，建议大家都看官网学习，如果英文看的吃力的话再查中文资料。</p>
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>&emsp;好久没碰过这个博客了，在2016年的最后一天留个足迹吧！自从到了浙大读研，就意一直跟着导师做区块链研究，不怎么做前端项目了，囧～～但是，我对前端领域的技术更新会一直关注！刚好最近要做一个项目的宣传页，第一版UI的实现基本全部动画都是CSS3实现，没什么JS代码，后来UI改版，苦逼的我又得推倒重来。从2015年RN开源以来，我就一直想找个时间学习一下React，但却一直拖着。。。刚好抓住这个机会学习一下React和Webpack，然后把这个改版的前端界面架构搭起来。在慕课网上看到这个项目的教程，感觉挺有意思的，就用ES6语法做了起来。</p>
+<p>关于<a href="https://facebook.github.io/react/docs/hello-world.html" target="_blank" rel="external">React</a>与<a href="http://webpack.github.io/docs/" target="_blank" rel="external">Webpack</a>的使用方法这里不阐述，建议大家都看官网学习，如果英文看的吃力的话再查中文资料。</p>
 <p>以下是我学习React之前收藏的链接：</p>
 <ul>
 <li><a href="https://github.com/petehunt/react-howto" target="_blank" rel="external">React-howto</a></li>
 <li><a href="http://andrewhfarmer.com/getting-started-tutorials/" target="_blank" rel="external">Top 5 Tutorials for Getting Started with React</a></li>
 </ul>
-<h2 id="项目启动"><a href="#项目启动" class="headerlink" title="项目启动"></a>项目启动</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">git <span class="built_in">clone</span> https://github.com/Mxxim/gallary-by-react.git</div><div class="line"></div><div class="line">npm install</div><div class="line"></div><div class="line">npm start</div></pre></td></tr></table></figure>
+<h2 id="项目启动"><a href="#项目启动" class="headerlink" title="项目启动"></a>项目启动</h2><p>项目展示：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">git <span class="built_in">clone</span> https://github.com/Mxxim/gallary-by-react.git</div><div class="line"></div><div class="line">npm install</div><div class="line"></div><div class="line">npm start</div></pre></td></tr></table></figure></p>
 <a id="more"></a>
 <h2 id="项目准备过程"><a href="#项目准备过程" class="headerlink" title="项目准备过程"></a>项目准备过程</h2><h3 id="安装全局依赖"><a href="#安装全局依赖" class="headerlink" title="安装全局依赖"></a>安装全局依赖</h3><ul>
 <li><p>安装<a href="https://github.com/creationix/nvm" target="_blank" rel="external">nvm</a></p>
@@ -386,6 +369,11 @@ Top 5 Tutorials for Getting Started with React
 <p>其他命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Just build the dist version and copy static files</span></div><div class="line">npm run dist</div><div class="line"></div><div class="line"><span class="comment"># Start the dev-server with the dist version</span></div><div class="line">npm run serve:dist</div></pre></td></tr></table></figure></p>
 <h3 id="使用github服务打开"><a href="#使用github服务打开" class="headerlink" title="使用github服务打开"></a>使用github服务打开</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git subtree push --prefix=dist origin gh-pages</div></pre></td></tr></table></figure>
 <p>然后就可以使用<code>http://{username}.github.io/gallary-by-react/</code>访问了。</p>
+<h3 id="待改进的地方"><a href="#待改进的地方" class="headerlink" title="待改进的地方"></a>待改进的地方</h3><ul>
+<li>全部组件都写在一个文件里了，图片信息、状态信息应该由子组件自己管理，而不是都塞到父组件。</li>
+<li>图片描述内容不够丰富。</li>
+<li>可以添加一个音乐播放器，来首《天空之城》啥的就更有feel了～（宫崎骏动漫小粉丝飘过～）。</li>
+</ul>
 
       
     </div>
@@ -548,7 +536,7 @@ Top 5 Tutorials for Getting Started with React
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#项目启动"><span class="nav-number">2.</span> <span class="nav-text">项目启动</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#项目准备过程"><span class="nav-number">3.</span> <span class="nav-text">项目准备过程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装全局依赖"><span class="nav-number">3.1.</span> <span class="nav-text">安装全局依赖</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建项目"><span class="nav-number">3.2.</span> <span class="nav-text">创建项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#编写项目"><span class="nav-number">3.3.</span> <span class="nav-text">编写项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#启动项目"><span class="nav-number">3.4.</span> <span class="nav-text">启动项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用github服务打开"><span class="nav-number">3.5.</span> <span class="nav-text">使用github服务打开</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#项目启动"><span class="nav-number">2.</span> <span class="nav-text">项目启动</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#项目准备过程"><span class="nav-number">3.</span> <span class="nav-text">项目准备过程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装全局依赖"><span class="nav-number">3.1.</span> <span class="nav-text">安装全局依赖</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建项目"><span class="nav-number">3.2.</span> <span class="nav-text">创建项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#编写项目"><span class="nav-number">3.3.</span> <span class="nav-text">编写项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#启动项目"><span class="nav-number">3.4.</span> <span class="nav-text">启动项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用github服务打开"><span class="nav-number">3.5.</span> <span class="nav-text">使用github服务打开</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#待改进的地方"><span class="nav-number">3.6.</span> <span class="nav-text">待改进的地方</span></a></li></ol></li></ol></div>
             
           </div>
         </section>
