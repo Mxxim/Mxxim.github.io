@@ -326,51 +326,18 @@
 
       
         
-          
-            <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>这个项目在慕课网上是有教程的。<br>关于<a href="https://facebook.github.io/react/docs/hello-world.html" target="_blank" rel="external">React</a>与<a href="http://webpack.github.io/docs/" target="_blank" rel="external">Webpack</a>的使用方法这里不阐述，建议大家都看官网学习，如果英文看的吃力的话再查中文资料。</p>
+          <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>这个项目在慕课网上是有教程的。<br>关于<a href="https://facebook.github.io/react/docs/hello-world.html">React</a>与<a href="http://webpack.github.io/docs/">Webpack</a>的使用方法这里不阐述，建议大家都看官网学习，如果英文看的吃力的话再查中文资料。</p>
 <p>以下是我学习React之前收藏的链接：</p>
 <ul>
-<li><a href="https://github.com/petehunt/react-howto" target="_blank" rel="external">React-howto</a></li>
-<li><a href="http://andrewhfarmer.com/getting-started-tutorials/" target="_blank" rel="external">Top 5 Tutorials for Getting Started with React</a></li>
+<li><a href="https://github.com/petehunt/react-howto">React-howto</a></li>
+<li><a href="http://andrewhfarmer.com/getting-started-tutorials/">Top 5 Tutorials for Getting Started with React</a></li>
 </ul>
 <h2 id="项目启动"><a href="#项目启动" class="headerlink" title="项目启动"></a>项目启动</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">git <span class="built_in">clone</span> https://github.com/Mxxim/gallary-by-react.git</div><div class="line"></div><div class="line">npm install</div><div class="line"></div><div class="line">npm start</div></pre></td></tr></table></figure>
-<h2 id="项目准备过程"><a href="#项目准备过程" class="headerlink" title="项目准备过程"></a>项目准备过程</h2><h3 id="安装全局依赖"><a href="#安装全局依赖" class="headerlink" title="安装全局依赖"></a>安装全局依赖</h3><ul>
-<li><p>安装<a href="https://github.com/creationix/nvm" target="_blank" rel="external">nvm</a></p>
-</li>
-<li><p>安装<a href="https://nodejs.org/zh-cn/" target="_blank" rel="external">nodeJS</a>: （当前版本是v6.9.1）</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nvm install node</div></pre></td></tr></table></figure>
-</li>
-<li><p>安装<a href="http://yeoman.io/" target="_blank" rel="external">Yeoman</a>：（当前版本v1.8.5）</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g yo</div></pre></td></tr></table></figure>
-</li>
-<li><p>安装<a href="https://github.com/react-webpack-generators/generator-react-webpack#readme" target="_blank" rel="external">generator-react-webpack</a>：（当前版本v3.3.4）Yeoman的ReactJS项目生成器。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">`npm install -g generator-react-webpack</div></pre></td></tr></table></figure>
-</li>
-<li><p>Chrome浏览器安装React Developer Tools扩展程序，方便Chrome Developer tool调试，这个扩展程序会在developer tool上定义一个<code>__REACT_DEVTOOLS_GLOBAL_HOOK__</code>全局变量，然后React在初始化的时候就会和这个HOOK进行通信，从而实现页面的<strong>热刷新</strong>。</p>
-</li>
-</ul>
-<p><img src="/images/react/1482665525613.png" alt="image"></p>
-<p>查看全局依赖及其版本号：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">npm ls -g --depth=0 2&gt;/dev/null</div><div class="line">npm ls -g --depth=1 2&gt;/dev/null</div><div class="line">npm ls -g --depth=1 2&gt;/dev/null ｜grep yo</div></pre></td></tr></table></figure></p>
-<p><code>2&gt;/dev/null</code>表示在执行命令<code>npm ls -g</code>过程中若发生错误，则将错误信息重定向。具体详情可插件bash命令。</p>
-<h3 id="创建项目"><a href="#创建项目" class="headerlink" title="创建项目"></a>创建项目</h3><ul>
-<li><p>创建项目目录</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mkdir gallery-by-react &amp;&amp; <span class="built_in">cd</span> gallery-by-react</div></pre></td></tr></table></figure>
-</li>
-<li><p>利用generator-react-webpack来生成项目</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yo react-webpack gallery-by-react</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="编写项目"><a href="#编写项目" class="headerlink" title="编写项目"></a>编写项目</h3><p>几个学习重点：</p>
-<ul>
-<li>理解webpack配置文件中的各个参数</li>
-<li>画廊图片位置<br><img src="/images/react/1482732491459.png" alt="image"><br><img src="/images/react/1482732520228.png" alt="image"></li>
-</ul>
-<h3 id="启动项目"><a href="#启动项目" class="headerlink" title="启动项目"></a>启动项目</h3><p><code>npm start</code></p>
-<p>其他命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Just build the dist version and copy static files</span></div><div class="line">npm run dist</div><div class="line"></div><div class="line"><span class="comment"># Start the dev-server with the dist version</span></div><div class="line">npm run serve:dist</div></pre></td></tr></table></figure></p>
-<h3 id="使用github服务打开"><a href="#使用github服务打开" class="headerlink" title="使用github服务打开"></a>使用github服务打开</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git subtree push --prefix=dist origin gh-pages</div></pre></td></tr></table></figure>
-<p>然后就可以使用<code>http://{username}.github.io/gallary-by-react/</code>访问了。</p>
-
-          
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/12/31/the-first-project-by-react/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
