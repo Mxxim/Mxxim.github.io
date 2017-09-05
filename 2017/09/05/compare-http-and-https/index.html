@@ -84,20 +84,27 @@
 
 
 
-<meta name="description" content="前言&amp;emsp;好久没碰过这个博客了，在2016年的最后一天留个足迹吧！自从到了浙大读研，就意一直跟着导师做区块链研究，不怎么做前端项目了，囧～～但是，我对前端领域的技术更新会一直关注！刚好最近要做一个项目的宣传页，第一版UI的实现基本全部动画都是CSS3实现，没什么JS代码，后来UI改版，苦逼的我又得推倒重来。从2015年RN开源以来，我就一直想找个时间学习一下React，但却一直拖着。。。刚好">
+<meta name="description" content="一、HTTP协议关于HTTP协议的介绍，可以参考文章：HTTP 协议入门 - 阮一峰的网络日志
+HTTP/1.1和HTTP/1.0的区别
+新增方法 PUT、PATCH、HEAD、OPTIONS、DELETE  。
+请求头新增Host字段 用来指定服务器的域名，有个该字段，就可以将请求发往同一台服务器上的不同网站，为虚拟主机的兴起打下了基础。请求消息中如果没有Host头域会报告一个错误（400 Ba">
 <meta property="og:type" content="article">
-<meta property="og:title" content="我的第一个React练手项目——画廊应用">
-<meta property="og:url" content="https://mxxim.com/2016/12/31/the-first-project-by-react/index.html">
+<meta property="og:title" content="HTTP1.0、HTTP1.1、HTTP2和HTTPS的对比">
+<meta property="og:url" content="https://mxxim.com/2017/09/05/compare-http-and-https/index.html">
 <meta property="og:site_name" content="Sammy的博客">
-<meta property="og:description" content="前言&amp;emsp;好久没碰过这个博客了，在2016年的最后一天留个足迹吧！自从到了浙大读研，就意一直跟着导师做区块链研究，不怎么做前端项目了，囧～～但是，我对前端领域的技术更新会一直关注！刚好最近要做一个项目的宣传页，第一版UI的实现基本全部动画都是CSS3实现，没什么JS代码，后来UI改版，苦逼的我又得推倒重来。从2015年RN开源以来，我就一直想找个时间学习一下React，但却一直拖着。。。刚好">
-<meta property="og:image" content="https://mxxim.com/images/react/1482665525613.png">
-<meta property="og:image" content="https://mxxim.com/images/react/1482732491459.png">
-<meta property="og:image" content="https://mxxim.com/images/react/1482732520228.png">
-<meta property="og:updated_time" content="2016-12-31T14:35:37.000Z">
+<meta property="og:description" content="一、HTTP协议关于HTTP协议的介绍，可以参考文章：HTTP 协议入门 - 阮一峰的网络日志
+HTTP/1.1和HTTP/1.0的区别
+新增方法 PUT、PATCH、HEAD、OPTIONS、DELETE  。
+请求头新增Host字段 用来指定服务器的域名，有个该字段，就可以将请求发往同一台服务器上的不同网站，为虚拟主机的兴起打下了基础。请求消息中如果没有Host头域会报告一个错误（400 Ba">
+<meta property="og:image" content="https://mxxim.com/./1504593402271.png">
+<meta property="og:updated_time" content="2017-09-05T11:42:45.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="我的第一个React练手项目——画廊应用">
-<meta name="twitter:description" content="前言&amp;emsp;好久没碰过这个博客了，在2016年的最后一天留个足迹吧！自从到了浙大读研，就意一直跟着导师做区块链研究，不怎么做前端项目了，囧～～但是，我对前端领域的技术更新会一直关注！刚好最近要做一个项目的宣传页，第一版UI的实现基本全部动画都是CSS3实现，没什么JS代码，后来UI改版，苦逼的我又得推倒重来。从2015年RN开源以来，我就一直想找个时间学习一下React，但却一直拖着。。。刚好">
-<meta name="twitter:image" content="https://mxxim.com/images/react/1482665525613.png">
+<meta name="twitter:title" content="HTTP1.0、HTTP1.1、HTTP2和HTTPS的对比">
+<meta name="twitter:description" content="一、HTTP协议关于HTTP协议的介绍，可以参考文章：HTTP 协议入门 - 阮一峰的网络日志
+HTTP/1.1和HTTP/1.0的区别
+新增方法 PUT、PATCH、HEAD、OPTIONS、DELETE  。
+请求头新增Host字段 用来指定服务器的域名，有个该字段，就可以将请求发往同一台服务器上的不同网站，为虚拟主机的兴起打下了基础。请求消息中如果没有Host头域会报告一个错误（400 Ba">
+<meta name="twitter:image" content="https://mxxim.com/./1504593402271.png">
 
 
 
@@ -118,9 +125,9 @@
 
 
 
-  <link rel="canonical" href="https://mxxim.com/2016/12/31/the-first-project-by-react/"/>
+  <link rel="canonical" href="https://mxxim.com/2017/09/05/compare-http-and-https/"/>
 
-  <title> 我的第一个React练手项目——画廊应用 | Sammy的博客 </title>
+  <title> HTTP1.0、HTTP1.1、HTTP2和HTTPS的对比 | Sammy的博客 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -250,7 +257,7 @@
             
             
               
-                我的第一个React练手项目——画廊应用
+                HTTP1.0、HTTP1.1、HTTP2和HTTPS的对比
               
             
           </h1>
@@ -262,38 +269,19 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-12-31T18:42:56+08:00" content="2016-12-31">
-              2016-12-31
+            <time itemprop="dateCreated" datetime="2017-09-05T19:38:18+08:00" content="2017-09-05">
+              2017-09-05
             </time>
           </span>
 
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/React/" itemprop="url" rel="index">
-                    <span itemprop="name">React</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
           
 
           
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/12/31/the-first-project-by-react/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/31/the-first-project-by-react/" itemprop="commentsCount"></span>
+                <a href="/2017/09/05/compare-http-and-https/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/09/05/compare-http-and-https/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -303,7 +291,7 @@
 
           
           
-             <span id="/2016/12/31/the-first-project-by-react/" class="leancloud_visitors" data-flag-title="我的第一个React练手项目——画廊应用">
+             <span id="/2017/09/05/compare-http-and-https/" class="leancloud_visitors" data-flag-title="HTTP1.0、HTTP1.1、HTTP2和HTTPS的对比">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -325,55 +313,34 @@
       
 
       
-        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>&emsp;好久没碰过这个博客了，在2016年的最后一天留个足迹吧！自从到了浙大读研，就意一直跟着导师做区块链研究，不怎么做前端项目了，囧～～但是，我对前端领域的技术更新会一直关注！刚好最近要做一个项目的宣传页，第一版UI的实现基本全部动画都是CSS3实现，没什么JS代码，后来UI改版，苦逼的我又得推倒重来。从2015年RN开源以来，我就一直想找个时间学习一下React，但却一直拖着。。。刚好抓住这个机会学习一下React和Webpack，然后把这个改版的前端界面架构搭起来。在慕课网上看到这个项目的教程，感觉挺有意思的，就用ES6语法做了起来。</p>
-<p>关于<a href="https://facebook.github.io/react/docs/hello-world.html" target="_blank" rel="external">React</a>与<a href="http://webpack.github.io/docs/" target="_blank" rel="external">Webpack</a>的使用方法这里不阐述，建议大家都看官网学习，如果英文看的吃力的话再查中文资料。</p>
-<p>以下是我学习React之前收藏的链接：</p>
-<ul>
-<li><a href="https://github.com/petehunt/react-howto" target="_blank" rel="external">React-howto</a></li>
-<li><a href="http://andrewhfarmer.com/getting-started-tutorials/" target="_blank" rel="external">Top 5 Tutorials for Getting Started with React</a></li>
-</ul>
-<h2 id="项目启动"><a href="#项目启动" class="headerlink" title="项目启动"></a>项目启动</h2><p>项目展示：<a href="http://mxxim.com/gallary-by-react/">http://mxxim.com/gallary-by-react/</a><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">git <span class="built_in">clone</span> https://github.com/Mxxim/gallary-by-react.git</div><div class="line"></div><div class="line">npm install</div><div class="line"></div><div class="line">npm start</div></pre></td></tr></table></figure></p>
-<a id="more"></a>
-<h2 id="项目准备过程"><a href="#项目准备过程" class="headerlink" title="项目准备过程"></a>项目准备过程</h2><h3 id="安装全局依赖"><a href="#安装全局依赖" class="headerlink" title="安装全局依赖"></a>安装全局依赖</h3><ul>
-<li><p>安装<a href="https://github.com/creationix/nvm" target="_blank" rel="external">nvm</a></p>
-</li>
-<li><p>安装<a href="https://nodejs.org/zh-cn/" target="_blank" rel="external">nodeJS</a>: （当前版本是v6.9.1）</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nvm install node</div></pre></td></tr></table></figure>
-</li>
-<li><p>安装<a href="http://yeoman.io/" target="_blank" rel="external">Yeoman</a>：（当前版本v1.8.5）</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g yo</div></pre></td></tr></table></figure>
-</li>
-<li><p>安装<a href="https://github.com/react-webpack-generators/generator-react-webpack#readme" target="_blank" rel="external">generator-react-webpack</a>：（当前版本v3.3.4）Yeoman的ReactJS项目生成器。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">`npm install -g generator-react-webpack</div></pre></td></tr></table></figure>
-</li>
-<li><p>Chrome浏览器安装React Developer Tools扩展程序，方便Chrome Developer tool调试，这个扩展程序会在developer tool上定义一个<code>__REACT_DEVTOOLS_GLOBAL_HOOK__</code>全局变量，然后React在初始化的时候就会和这个HOOK进行通信，从而实现页面的<strong>热刷新</strong>。</p>
-</li>
-</ul>
-<p><img src="/images/react/1482665525613.png" alt="image"></p>
-<p>查看全局依赖及其版本号：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">npm ls -g --depth=0 2&gt;/dev/null</div><div class="line">npm ls -g --depth=1 2&gt;/dev/null</div><div class="line">npm ls -g --depth=1 2&gt;/dev/null ｜grep yo</div></pre></td></tr></table></figure></p>
-<p><code>2&gt;/dev/null</code>表示在执行命令<code>npm ls -g</code>过程中若发生错误，则将错误信息重定向。具体详情可插件bash命令。</p>
-<h3 id="创建项目"><a href="#创建项目" class="headerlink" title="创建项目"></a>创建项目</h3><ul>
-<li><p>创建项目目录</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mkdir gallery-by-react &amp;&amp; <span class="built_in">cd</span> gallery-by-react</div></pre></td></tr></table></figure>
-</li>
-<li><p>利用generator-react-webpack来生成项目</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yo react-webpack gallery-by-react</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="编写项目"><a href="#编写项目" class="headerlink" title="编写项目"></a>编写项目</h3><p>几个学习重点：</p>
-<ul>
-<li>理解webpack配置文件中的各个参数</li>
-<li>画廊图片位置<br><img src="/images/react/1482732491459.png" alt="image"><br><img src="/images/react/1482732520228.png" alt="image"></li>
-</ul>
-<h3 id="启动项目"><a href="#启动项目" class="headerlink" title="启动项目"></a>启动项目</h3><p><code>npm start</code></p>
-<p>其他命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Just build the dist version and copy static files</span></div><div class="line">npm run dist</div><div class="line"></div><div class="line"><span class="comment"># Start the dev-server with the dist version</span></div><div class="line">npm run serve:dist</div></pre></td></tr></table></figure></p>
-<h3 id="使用github服务打开"><a href="#使用github服务打开" class="headerlink" title="使用github服务打开"></a>使用github服务打开</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git subtree push --prefix=dist origin gh-pages</div></pre></td></tr></table></figure>
-<p>然后就可以使用<code>http://{username}.github.io/gallary-by-react/</code>访问了。</p>
-<h3 id="待改进的地方"><a href="#待改进的地方" class="headerlink" title="待改进的地方"></a>待改进的地方</h3><ul>
-<li>全部组件都写在一个文件里了，图片信息、状态信息应该由子组件自己管理，而不是都塞到父组件。</li>
-<li>图片描述内容不够丰富。</li>
-<li>可以添加一个音乐播放器，来首《天空之城》啥的就更有feel了～（宫崎骏动漫小粉丝飘过～）。</li>
-</ul>
+        <h2 id="一、HTTP协议"><a href="#一、HTTP协议" class="headerlink" title="一、HTTP协议"></a>一、HTTP协议</h2><p>关于HTTP协议的介绍，可以参考文章：<a href="http://www.ruanyifeng.com/blog/2016/08/http.html" target="_blank" rel="external">HTTP 协议入门 - 阮一峰的网络日志</a></p>
+<h3 id="HTTP-1-1和HTTP-1-0的区别"><a href="#HTTP-1-1和HTTP-1-0的区别" class="headerlink" title="HTTP/1.1和HTTP/1.0的区别"></a>HTTP/1.1和HTTP/1.0的区别</h3><ol>
+<li><strong><code>新增方法</code></strong> <code>PUT</code>、<code>PATCH</code>、<code>HEAD</code>、<code>OPTIONS</code>、<code>DELETE</code>  。</li>
+<li><strong><code>请求头新增Host字段</code></strong> 用来指定服务器的域名，有个该字段，就可以将请求发往同一台服务器上的不同网站，为虚拟主机的兴起打下了基础。请求消息中如果没有Host头域会报告一个错误（400 Bad Request）。</li>
+<li><strong><code>持久连接</code></strong> HTTP1.1默认使用长连接。即TCP连接默认不关闭，可以被多个请求复用，不像HTTP1.0需要声明<code>Connection: keep-alive</code>。当连接一段时间未使用时，则自动关闭。</li>
+<li><strong><code>管道机制</code></strong> HTTP1.1引入管道机制（pipelining）。即在同一个TCP连接里面，客户端可以<strong>同时发送</strong>多个请求，不过服务器还是按照顺序，先响应A请求，完成后再响应B请求。以前是在同一个TCP连接中，先发送A请求，等服务做出响应后，再发送B请求。（如果A需要处理很长时间，则会阻塞，HTTP/2 能解决这个问题）</li>
+<li><strong><code>响应头新增Content-Length字段</code></strong> 由于一个TCP连接可以传送多个响应，所以需要该字段来声明本次响应的数据长度来区分数据包是属于哪一个响应的。</li>
+<li><strong><code>支持分块传输编码</code></strong> </li>
+<li><strong><code>缓存处理</code></strong> 在HTTP1.0中主要使用header里的If-Modified-Since,Expires来做为缓存判断的标准，HTTP1.1则引入了更多的缓存控制策略例如Entity tag，If-Unmodified-Since, If-Match, If-None-Match等更多可供选择的缓存头来控制缓存策略。</li>
+<li><strong><code>带宽优化及网络连接的使用</code></strong> HTTP1.0中，存在一些浪费带宽的现象，例如客户端只是需要某个对象的一部分，而服务器却将整个对象送过来了，并且不支持断点续传功能，HTTP1.1则在请求头引入了range头域，它允许只请求资源的某个部分，即返回码是206（Partial Content），这样就方便了开发者自由的选择以便于充分利用带宽和连接。</li>
+<li><strong><code>错误通知的管理</code></strong> 在HTTP1.1中新增了24个错误状态响应码，如409（Conflict）表示请求的资源与资源的当前状态发生冲突；410（Gone）表示服务器上的某个资源被永久性的删除。</li>
+</ol>
+<h3 id="HTTP-2和HTTP-1-1的区别"><a href="#HTTP-2和HTTP-1-1的区别" class="headerlink" title="HTTP/2和HTTP/1.1的区别"></a>HTTP/2和HTTP/1.1的区别</h3><ol>
+<li><strong><code>二进制协议</code></strong> HTTP/1.1的头信息是文本格式，数据体可以是文本，也可以是二进制。HTTP/2的头信息和数据体均为二进制，并且统称为“帧（frame）“：头信息帧和数据帧。</li>
+<li><strong><code>头信息压缩</code></strong>  HTTP是无状态协议，每次请求都要带上头信息，请求的很多字段都是重复的，会浪费很多带宽。HTTP/2 对这一点做了优化，引入了头信息压缩机制（header compression）。一方面，头信息使用<code>gzip</code>或<code>compress</code>压缩后再发送；另一方面，客户端和服务器同时维护一张头信息表，所有字段都会存入这个表，生成一个索引号，以后就不发送同样字段了，只发送索引号，这样就提高速度了。</li>
+<li><strong><code>多路复用</code></strong> 即在一个连接里，客户端可以同时发送多个请求，服务器可以同时发送多个响应，而且不用按照顺序一一对应，这样就<strong>避免了“队头阻塞”</strong>。举例来说，在一个TCP连接里面，服务器同时收到了A请求和B请求，于是先回应A请求，结果发现处理过程非常耗时，于是就发送A请求已经处理好的部分， 接着回应B请求，完成后，再发送A请求剩下的部分。<br><img src="./1504593402271.png" alt="Alt text"></li>
+<li><strong><code>数据流</code></strong> HTTP/2 将每个请求或回应的所有数据包，称为一个数据流（stream）。每个数据流都有一个独一无二的编号。数据包发送的时候，都必须标记数据流ID，用来区分它属于哪个数据流。另外还规定，客户端发出的数据流，ID一律为奇数，服务器发出的，ID为偶数。<br>数据流发送到一半的时候，客户端和服务器都可以发送信号（RST_STREAM帧），取消这个数据流。1.1版取消数据流的唯一方法，就是关闭TCP连接。这就是说，HTTP/2 可以取消某一次请求，同时保证TCP连接还打开着，可以被其他请求使用。<br>客户端还可以指定数据流的优先级。优先级越高，服务器就会越早回应。</li>
+<li><strong><code>服务器推送</code></strong> 常见场景是客户端请求一个网页，这个网页里面包含很多静态资源。正常情况下，客户端必须收到网页后，解析HTML源码，发现有静态资源，再发出静态资源请求。其实，服务器可以预期到客户端请求网页后，很可能会再请求静态资源，所以就主动把这些静态资源随着网页一起发给客户端了。</li>
+</ol>
+<h2 id="二、HTTPS协议"><a href="#二、HTTPS协议" class="headerlink" title="二、HTTPS协议"></a>二、HTTPS协议</h2><h3 id="HTTPS协议简介"><a href="#HTTPS协议简介" class="headerlink" title="HTTPS协议简介"></a>HTTPS协议简介</h3><p>HTTPS是网景在1994年创建，并应用在网景导航者浏览器中。 最初，HTTPS是与SSL一起使用的；在SSL逐渐演变到TLS时，最新的HTTPS也由在2000年五月公布的RFC 2818正式确定下来。</p>
+<h3 id="HTTP和HTTPS对比"><a href="#HTTP和HTTPS对比" class="headerlink" title="HTTP和HTTPS对比"></a>HTTP和HTTPS对比</h3><ol>
+<li>HTTP协议运行在TCP之上，所有传输的内容都是明文，HTTPS运行在SSL/TLS之上，SSL/TLS运行在TCP之上，所有传输的内容都经过加密的。</li>
+<li>HTTPS协议需要到CA申请证书。</li>
+<li>HTTP默认使用80端口，HTTPS默认使用443端口。</li>
+<li>HTTPS用户访问速度较慢、服务端资源压力较大（因为要进行大量的密钥算法计算，消耗CPU、内存）。因此使用HTTPS的话，需要做好足够的优化。</li>
+</ol>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p><a href="http://www.ruanyifeng.com/blog/2016/08/http.html" target="_blank" rel="external">HTTP 协议入门 - 阮一峰的网络日志</a><br><a href="http://www.alloyteam.com/2016/07/httphttp2-0spdyhttps-reading-this-is-enough/" target="_blank" rel="external">HTTP,HTTP2.0,SPDY,HTTPS你应该知道的一些事</a></p>
+<p>如有描述不恰当之处，欢迎指出与补充，谢谢！</p>
 
       
     </div>
@@ -399,17 +366,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/08/05/learning-docker-part-one/" rel="next" title="Docker学习（一）——认识Docker">
-                <i class="fa fa-chevron-left"></i> Docker学习（一）——认识Docker
+              <a href="/2017/01/02/committed-code-in-profile/" rel="next" title="2016 Committed code in profile">
+                <i class="fa fa-chevron-left"></i> 2016 Committed code in profile
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/01/02/committed-code-in-profile/" rel="prev" title="2016 Committed code in profile">
-                2016 Committed code in profile <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -435,8 +398,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/12/31/the-first-project-by-react/"
-           data-title="我的第一个React练手项目——画廊应用" data-url="https://mxxim.com/2016/12/31/the-first-project-by-react/">
+      <div class="ds-thread" data-thread-key="2017/09/05/compare-http-and-https/"
+           data-title="HTTP1.0、HTTP1.1、HTTP2和HTTPS的对比" data-url="https://mxxim.com/2017/09/05/compare-http-and-https/">
       </div>
     
   </div>
@@ -540,7 +503,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#项目启动"><span class="nav-number">2.</span> <span class="nav-text">项目启动</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#项目准备过程"><span class="nav-number">3.</span> <span class="nav-text">项目准备过程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装全局依赖"><span class="nav-number">3.1.</span> <span class="nav-text">安装全局依赖</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建项目"><span class="nav-number">3.2.</span> <span class="nav-text">创建项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#编写项目"><span class="nav-number">3.3.</span> <span class="nav-text">编写项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#启动项目"><span class="nav-number">3.4.</span> <span class="nav-text">启动项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用github服务打开"><span class="nav-number">3.5.</span> <span class="nav-text">使用github服务打开</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#待改进的地方"><span class="nav-number">3.6.</span> <span class="nav-text">待改进的地方</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、HTTP协议"><span class="nav-number">1.</span> <span class="nav-text">一、HTTP协议</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#HTTP-1-1和HTTP-1-0的区别"><span class="nav-number">1.1.</span> <span class="nav-text">HTTP/1.1和HTTP/1.0的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTTP-2和HTTP-1-1的区别"><span class="nav-number">1.2.</span> <span class="nav-text">HTTP/2和HTTP/1.1的区别</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、HTTPS协议"><span class="nav-number">2.</span> <span class="nav-text">二、HTTPS协议</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#HTTPS协议简介"><span class="nav-number">2.1.</span> <span class="nav-text">HTTPS协议简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTTP和HTTPS对比"><span class="nav-number">2.2.</span> <span class="nav-text">HTTP和HTTPS对比</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考文献"><span class="nav-number">3.</span> <span class="nav-text">参考文献</span></a></li></ol></div>
             
           </div>
         </section>
